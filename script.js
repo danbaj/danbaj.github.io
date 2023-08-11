@@ -1,8 +1,8 @@
 // Get the elements
 const timerDisplay = document.getElementById('timerDisplay');
 const startButton = document.getElementById('startButton');
-const audioTick = document.getElementById('audioTick');
-const audioEnd = document.getElementById('audioEnd');
+//const audioTick = document.getElementById('audioTick');
+//const audioEnd = document.getElementById('audioEnd');
 
 let timerSeconds = 0;
 let interval;
