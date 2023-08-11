@@ -1,1 +1,33 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What does the button do?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <button id="startButton"></button>
+    <h1 id="timerDisplay">00:00</h1>
+    <h2>What does the button do?</h2>
+  </div>
+
+  <button type="button" class="collapsible">Hint 1</button>
+  <div class="content">
+    <p>The button is a representation of a physical button. PICTURE Both the physical button and this button have audio as their main output. This website is designed to showcase the functionality and provide information about the physical button. </p>
+  </div>
+  <button type="button" class="collapsible">Hint 2</button>
+  <div class="content">
+    <p>The button can take two different input commands, clicking or holding the button.</p>
+  </div>
+  <button type="button" class="collapsible">Answer</button>
+  <div class="content">
+    <p>The button starts a countdown timer and adds 1 minute for each press of the button. The timer can be reset by holding the button for 5 seconds. The timer was designed to provide an alternative to phone based timers that often requires several clicks on a touch screen in order start a countdown. The timer can be especially useful for practise sessions or timed exercises. YOUTUBE, GITHUB, ARDUINO, MORE </p>
+  </div>
+    
+  <audio id="audioTick" src="tick.mp3"></audio>
+  <audio id="audioEnd" src="end.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
