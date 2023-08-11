@@ -18,6 +18,7 @@ function textToSpeech(text){
     const synthesis = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 0.7;
+    utterance.lang = 'en';
     synthesis.speak(utterance);
     
   }
