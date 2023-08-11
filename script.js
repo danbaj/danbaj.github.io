@@ -45,7 +45,7 @@ function updateTimerDisplay() {
 // Countdown function
 function countdown() {
   if(timerSeconds % 60 === 1){ // Notify for each passing minute
-    textToSpeech(String(Math.floor(timerSeconds / 60)) + "minutes");
+    textToSpeech(Math.floor(timerSeconds / 60).toLocaleString('en') + "minutes");
   }
 
   timerSeconds -= 1;
