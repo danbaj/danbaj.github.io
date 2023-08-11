@@ -18,7 +18,7 @@ function textToSpeech(text){
     const synthesis = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 0.7;
-    utterance.lang = 'en';
+    utterance.lang = "en-US";
     synthesis.speak(utterance);
     
   }
@@ -45,7 +45,7 @@ function updateTimerDisplay() {
 // Countdown function
 function countdown() {
   if(timerSeconds % 60 === 1){ // Notify for each passing minute
-    textToSpeech(Math.floor(timerSeconds / 60).toLocaleString('en') + "minutes");
+    textToSpeech(String(Math.floor(timerSeconds / 60)) + "minutes");
   }
 
   timerSeconds -= 1;
