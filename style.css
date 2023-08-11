@@ -13,7 +13,7 @@ body {
   }
 
   #timerDisplay {
-    display: none;
+    display: default;
   }
   
   #startButton {
