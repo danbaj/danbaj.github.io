@@ -53,7 +53,7 @@ function countdown() {
 
   if (timerSeconds <= 0) {
     clearInterval(interval);
-    audioEnd.play();
+    //audioEnd.play();
     timerRunning = 0;
     textToSpeech("Stop");
   }
